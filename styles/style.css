@@ -1,0 +1,142 @@
+/*
+bg: #222324
+bg light: #2a2a2b
+
+accent: #E2E2E2
+accent dark: #c0bfbf
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face{
+	font-family: consolas; 
+	src: url('Consolas.ttf');
+}
+
+html{
+	height:100%;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar{
+	width:7px;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 20px;
+	background-color: #E2E2E2;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #c0bfbf;
+}
+
+
+header{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:30px 10%; 
+	height: 15%;
+}
+
+.logo{
+	width: 150px;
+	left:100px;
+	cursor: pointer;
+}
+
+li, a, button{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: larger;
+	color: #E2E2E2;
+	text-decoration: none;
+
+}
+
+
+.nLink{
+	list-style: none;
+}
+
+.nLink li{
+	display: inline-block;
+	padding:20px;
+}
+
+.nLink li a {
+	transition-duration: 0.3s;
+}
+
+.nLink li a:hover{
+	color: #c0bfbf;
+	font-size:x-large;
+	transition-duration: 0.3s;
+}
+
+.cont button{
+	background-color: #222324;
+	padding: 5px 25px;
+	border-style:solid;
+	border-color: #E2E2E2;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+}
+
+.cont button:hover{
+	color:#222324;
+	background-color: #E2E2E2;
+	transition-duration: 0.3s;
+	cursor:pointer;
+	padding: 10px 25px;
+	/* translate: 0px -5px; */
+}
+
+body{
+	margin:0px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background-color: #222324;
+	color: #E2E2E2;
+	height: 100%;
+}
+
+.content{
+	position: relative;
+	min-height: 53%;	
+}
+
+.intro{
+	margin-top: 10vb;
+	margin-left: 20vb;
+	margin-right: 20vb;
+	padding: 0px 25vb 5vb 25vb;
+	background-color: #2a2a2b;
+	font-weight: 400;
+}
+
+.intro h1{
+	text-align: center; 
+	padding-top: 10px; 
+	padding-bottom: 10px;
+	border-bottom-style:solid;
+	border-bottom-width: 2px;
+	border-radius: 2px;
+}
+
+footer{
+	position: relative;
+	width: 90%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:15px 5%;
+	background-color: #2a2a2b;
+
+}
