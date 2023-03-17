@@ -15,8 +15,8 @@ accent dark: #c0bfbf
 }
 
 html{
-	height:100%;
-	width:100%;
+	height: 100%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -24,7 +24,7 @@ html{
 
 
 ::-webkit-scrollbar{
-	width:7px;
+	width: 7px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -41,13 +41,13 @@ header{
 	display: flex;
 	justify-content:space-between;
 	align-items:center;
-	padding:30px 10%; 
+	padding: 1vw 10%; 
 	height: 15%;
+	width: 80vw;
 }
 
 .logo{
-	width: 150px;
-	left:100px;
+	width: 10vw;
 	cursor: pointer;
 }
 
@@ -55,6 +55,7 @@ li, a, button{
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: larger;
+	font-size: 2vb;
 	color: #E2E2E2;
 	text-decoration: none;
 
@@ -63,11 +64,13 @@ li, a, button{
 
 .nLink{
 	list-style: none;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
 }
 
 .nLink li{
-	display: inline-block;
-	padding:20px;
+	margin:2rem;
 }
 
 .nLink li a {
@@ -76,7 +79,7 @@ li, a, button{
 
 .nLink li a:hover{
 	color: #c0bfbf;
-	font-size:x-large;
+	font-size: 2.2vw;
 	transition-duration: 0.3s;
 }
 
@@ -95,7 +98,6 @@ li, a, button{
 	transition-duration: 0.3s;
 	cursor:pointer;
 	padding: 10px 25px;
-	/* translate: 0px -5px; */
 }
 
 body{
@@ -109,14 +111,15 @@ body{
 
 .content{
 	position: relative;
-	min-height: 53%;	
+	min-height: min-content;
+	overflow-wrap: break-word;
 }
 
 .intro{
-	margin-top: 10vb;
-	margin-left: 20vb;
-	margin-right: 20vb;
-	padding: 0px 25vb 5vb 25vb;
+	margin-top: 5em;
+	margin-left: 5em;
+	margin-right: 5em;
+	padding: 0px 50px 5em 50px;
 	background-color: #2a2a2b;
 	font-weight: 400;
 }
@@ -131,12 +134,13 @@ body{
 }
 
 footer{
-	position: relative;
+	position: fixed;
+	bottom: 0vh;
 	width: 90%;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	padding:15px 5%;
+	padding:1vw 5%;
 	background-color: #2a2a2b;
 
 }
