@@ -14,15 +14,7 @@ accent dark: #c0bfbf
 	src: url('Consolas.ttf');
 }
 
-html{
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-
+/* Scroll bar */
 ::-webkit-scrollbar{
 	width: 7px;
 }
@@ -36,41 +28,58 @@ html{
 	background-color: #c0bfbf;
 }
 
+/* Page */
+* {
+	box-sizing: border-box;
+}
 
+html{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation bar and Header */
 header{
 	display: flex;
-	justify-content:space-between;
-	align-items:center;
-	padding: 1vw 10%; 
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 0vw 10%; 
 	height: 15%;
-	width: 80vw;
+	width: 100%; 	
+	padding-bottom: 15vh;
 }
 
 .logo{
-	width: 10vw;
+	width: 30%;
+	height: auto;
 	cursor: pointer;
+	padding-top: 3vw;
 }
 
+/* List of nav buttons */
 li, a, button{
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: larger;
-	font-size: 2vb;
 	color: #E2E2E2;
 	text-decoration: none;
 
 }
 
-
 .nLink{
 	list-style: none;
 	display: flex;
-	flex-direction:row;
-	justify-content:space-between;
+	justify-content: space-around;
+	max-width:400px;
+	padding: 1vh;
+	margin:0;
 }
 
 .nLink li{
-	margin:2rem;
+	padding: 6vw;
+	min-width: 120px;
 }
 
 .nLink li a {
@@ -79,7 +88,6 @@ li, a, button{
 
 .nLink li a:hover{
 	color: #c0bfbf;
-	font-size: 2.2vw;
 	transition-duration: 0.3s;
 }
 
@@ -113,6 +121,8 @@ body{
 	position: relative;
 	min-height: min-content;
 	overflow-wrap: break-word;
+	background-color: blue;
+	width: 100%;
 }
 
 .intro{
@@ -133,14 +143,14 @@ body{
 	border-radius: 2px;
 }
 
+/* Footer */
 footer{
 	position: fixed;
 	bottom: 0vh;
-	width: 90%;
+	width: 100%;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
 	padding:1vw 5%;
 	background-color: #2a2a2b;
-
 }
