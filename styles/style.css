@@ -45,15 +45,36 @@ header{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	align-items: center;
 	padding: 0vw 10%; 
-	height: 15%;
+	height: fit-content;
 	width: 100%; 	
-	padding-bottom: 15vh;
 }
 
+@media only screen and (min-width:750px){
+	header{
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		padding: 0vw 5%; 
+	}
+	
+	.logo{
+		padding-top: 0vh;
+	}
+
+	.nLink{
+		display: inline-block;
+		width:100%;
+	}
+
+	.nLink li{
+		padding: 0;
+	}
+}
+
+
 .logo{
-	width: 30%;
-	height: auto;
+	width: 200px;
 	cursor: pointer;
 	padding-top: 3vw;
 }
@@ -73,7 +94,7 @@ li, a, button{
 	display: flex;
 	justify-content: space-around;
 	max-width:400px;
-	padding: 1vh;
+	padding: 0vh;
 	margin:0;
 }
 
@@ -121,14 +142,12 @@ body{
 	position: relative;
 	min-height: min-content;
 	overflow-wrap: break-word;
-	background-color: blue;
 	width: 100%;
 }
 
 .intro{
-	margin-top: 5em;
-	margin-left: 5em;
-	margin-right: 5em;
+	margin-left: 1em;
+	margin-right: 1em;
 	padding: 0px 50px 5em 50px;
 	background-color: #2a2a2b;
 	font-weight: 400;
