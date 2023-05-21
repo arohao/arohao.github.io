@@ -8,33 +8,92 @@
 		<link rel="stylesheet" href="styles/style.css"/>
 		<link rel="icon" href="img/favicon.png"/>
 	</head>
-	<body>	
-		<header>
-			<img class="logo" src="img/logo-trans.png" alt="logo" title="Logo"/>
-			<nav>
-				<ul class ="nLink">
-					<li><a href='#'>Home</a></li>
-					<li><a href='#'>Projects</a></li>
-					<li><a href='files/CV Aroha ( Updated ).pdf'>Resume</a></li>
-				</ul>
-			</nav>
-			<a class="cont" href="#"><button>Contact</button></a>
+	<body>
+		<header id="home">
+			arohao's Website
 		</header>
 
-		<div class="content">
-			<div class="intro" >
+		<nav>
+			<ul>
+				<li><a href='#home'>Home</a></li>
+				<li><a href='#projects'>Projects</a></li>
+				<li><a href='#resume'>Resume</a></li>
+				<li><a href='#contact'>Contact</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<article class="intro" >
 				<h1>Welcome to my page 😁</h1>
-				<p>I am a computer science student at the University of Ottawa. 
+				<p>
+					I am a computer science student at the University of Ottawa. 
 					My passion lies in all things programming. Nice to meet you! 
 					On this page will be an archive of projects I have 
 					worked on or been involved in, some of my social profiles 
 					and contact information, and my resume.
 				</p>
-			</div>
-		</div>	
-		<footer>
-			<p>@2023 arohao</p> 
-			<p>apple</p>
+			</article>
+
+			<section id="projects">
+				<h2>Projects</h2>
+				<ul>
+					<li> <a href="https://github.com/arohao/Simple-Calculator" style="text-decoration: none; color: inherit;">
+						Simple Calculator
+						</a>
+						<aside>(Python)</aside> 
+					</li>
+					<p> Python calculator made using the Tkinter library for a GUI. </p>
+					<li>
+						<a href="https://github.com/arohao/UOttaHack-Project" style="text-decoration: none; color: inherit;">
+							urCart Wrapped
+						</a>
+						<aside>(HTML/CSS/JS)</aside> 
+					</li>
+						<p> Using the ManifestV3 API, this extension interacts with 
+							a users page on either Google Chrome or Microsoft Edge, and would
+							'web-scraping' to display online payment transactions.
+						</p>
+					</li>
+					<li>
+						<a href="https://github.com/ahdernasr/hackthehill" style="text-decoration: none; color: inherit;">
+							Encrypted
+						</a>
+						<aside>(HTML/CSS/JS)</aside> 
+					</li>
+						<p>
+							This is a project aimed to develop a secure communication application. 
+							The application allows users to create chatrooms and exchange encrypted messages, photos, 
+							and files with each other using a 256-bit encryption algorithm. To ensure the integrity and 
+							authenticity of the data, the application uses end-to-end encryption and digital signatures 
+							to prevent Man-in-the-Middle attacks.
+						</p>
+				</ul>
+			</section>
+
+			<section class="pdf" id="resume">
+				<object
+				data="files/ArohaUpreti(03-05-23).pdf#toolbar=0"
+				type="application/pdf"
+				width="100%"
+				height="100%"
+			>
+				<iframe
+					src="files/ArohaUpreti(03-05-23).pdf#toolbar=0"
+					width="100%"
+					height="100%"
+					style="border: none"
+				>
+					<p>
+						Your browser does not support PDFs.
+						<a href="files/ArohaUpreti(03-05-23).pdf">Download the PDF</a>
+					</p>
+				</iframe>
+			</object>			</section>
+
+		</main>
+
+		<footer id="contact">
+			@arohao2020
 		</footer>
 	</body>
 </html>

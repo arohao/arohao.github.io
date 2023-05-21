@@ -1,174 +1,166 @@
-/*
-bg: #222324
-bg light: #2a2a2b
-
-accent: #E2E2E2
-accent dark: #c0bfbf
-
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-@font-face{
-	font-family: consolas; 
-	src: url('Consolas.ttf');
+html{
+	height:100%;
+	background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+	/* background by SVGBackgrounds.com */
+	color: white;
+	font-family: Cascadia Code;
 }
 
-/* Scroll bar */
 ::-webkit-scrollbar{
-	width: 7px;
+	width:5px;
+	background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb{
-	border-radius: 20px;
-	background-color: #E2E2E2;
+	background-color: #f1f1f1;
+	border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-	background-color: #c0bfbf;
-}
-
-/* Page */
-* {
-	box-sizing: border-box;
-}
-
-html{
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-/* Navigation bar and Header */
 header{
+	padding-top: 20vh;
+	font-size: 7vw;
+	text-align: center;
+
+	background-image: linear-gradient(90deg, #fcff9e 0%, #c67700 50%, #fcff9e 100%);
+	background-size: 50% 10%;
+	background-repeat: repeat;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color:transparent;
+	animation: change 3s linear infinite;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 3ch;
+}
+
+nav ul{
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	padding: 0vw 10%; 
-	height: fit-content;
-	width: 100%; 	
 }
 
-@media only screen and (min-width: 750px){
-	header{
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		padding: 0vw 5%; 
-	}
-	
-	.logo{
-		margin-bottom: 3%;
-	}
-
-	.nLink{
-		display: inline-block;
-		width:100%;
-	}
-
-	.nLink li{
-		padding: 0;
-	}
-}
-
-.logo{
-	width: 200px;
-	cursor: pointer;
-	padding-top: 3vw;
-}
-
-/* List of nav buttons */
-li, a, button{
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	font-size: larger;
-	color: #E2E2E2;
-	text-decoration: none;
-
-}
-
-.nLink{
+nav ul li{
 	list-style: none;
-	display: flex;
-	justify-content: space-around;
-	max-width:400px;
-	padding: 0vh;
-	margin:0;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
-.nLink li{
-	padding: 6vw;
-	min-width: 120px;
+nav ul li a{
+	color: #fcff9e;
+	transition: all 1s;
+	text-decoration: none;
 }
 
-.nLink li a {
-	transition-duration: 0.3s;
+nav ul li a:hover{
+	transition: all 250ms;
+	color: #c67700;
+
 }
 
-.nLink li a:hover{
-	color: #c0bfbf;
-	transition-duration: 0.3s;
-}
-
-.cont button{
-	background-color: #222324;
-	padding: 5px 25px;
-	border-style:solid;
-	border-color: #E2E2E2;
-	border-radius: 10px;
-	transition-duration: 0.3s;
-}
-
-.cont button:hover{
-	color:#222324;
-	background-color: #E2E2E2;
-	transition-duration: 0.3s;
-	cursor:pointer;
-	padding: 10px 25px;
-}
-
-body{
-	margin:0px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 500;
-	background-color: #222324;
-	color: #E2E2E2;
-	height: 100%;
-}
-
-.content{
-	position: relative;
-	min-height: min-content;
-	overflow-wrap: break-word;
-	width: 100%;
+main{
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 2.5%;
 }
 
 .intro{
-	margin-left: 1em;
-	margin-right: 1em;
-	padding: 0px 50px 5em 50px;
-	background-color: #2a2a2b;
-	font-weight: 400;
+	background-color: rgb(32,32,32);
+	background-color: rgba(32,32,32, 0.8); 
+	color: white;
+	border: 2px solid #f1f1f1;
+	padding: 30px;
+	margin-bottom: 5%;
 }
 
 .intro h1{
-	text-align: center; 
-	padding-top: 10px; 
-	padding-bottom: 10px;
-	border-bottom-style:solid;
-	border-bottom-width: 2px;
-	border-radius: 2px;
+	text-align: center;
 }
 
-/* Footer */
+section{
+	height: fit-content;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	background-color: rgb(32,32,32);
+	background-color: rgba(32,32,32, 0.8); 
+	overflow: hidden;
+	border-radius: 10px;
+	text-align: center;
+}
+
+section ul{
+	padding-inline-start: 1.5em;
+	text-align:left;	
+}
+
+section ul li{
+	font-size: larger;
+	list-style:circle;
+
+	background-image: linear-gradient(0deg, #c67700 0%, #fcff9e 50%, #c67700 100%);
+	background-attachment: fixed;
+	background-size: 50% 100%;
+	background-repeat: repeat;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color:transparent;
+
+}
+
+section ul li aside{
+	font-size:small;
+	float: right;
+	padding-right: 10px;
+}
+
+section ul p{
+	margin-block-start: 0;
+	font-size: smaller;
+}
+
 footer{
-	position: fixed;
-	bottom: 0vh;
-	width: 100%;
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	padding:1vw 5%;
-	background-color: #2a2a2b;
+	margin: -8px;
+	padding: 5px;
+	box-sizing: border-box;
+
+	position: relative;
+	background-color: #202020;
+	width:100% + 8px;
+}
+
+.pdf{
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 4%;
+	height: 100vh;
+}
+
+@media screen and (max-width:956px){
+	.pdf{
+		display:none;
+	}
+}
+
+@keyframes change {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 100%;
+
+	}
+	100% {
+		background-position: 100% 150%;
+	}
 }
