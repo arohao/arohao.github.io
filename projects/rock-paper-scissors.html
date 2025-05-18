@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style>
+      body {
+        background-color: rgb(25,25,25);
+        color: white;
+        font-family: Arial;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .move {
+        width: 120px;
+        height: 120px;
+        background-color: transparent;
+        border-radius: 75px;
+        border-color: white;
+        font-size: 50px;
+        margin-right: 10px;
+      }
+
+      .result {
+        margin-top: 50px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .reset-score {
+        border: none;
+        background-color: white;
+        padding: 8px 15px;
+        font-size: 15px;
+      }
+
+      .buttons {
+        width: 100%;
+        text-align: center;
+      }
+
+      .score {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+
+    <div class="buttons">
+      <button onclick="
+        playGame('rock');
+      " class="move">✊</button>
+      <button onclick="
+        playGame('paper');
+      " class="move">🖐️</button>
+      <button onclick="
+        playGame('scissors');
+      " class="move">✌️</button>
+    </div>
+
+    <p class="result-js result"></p>
+    <p class="moves-js" style="margin-bottom: 50px; text-align: center;"></p>
+    <p class="score-js score"></p>
+
+    <div class="buttons">
+      <button onclick="
+        score = {
+          wins: 0,
+          losses: 0,
+          ties: 0
+        };
+        document.querySelector('.score-js').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+        localStorage.setItem('score', JSON.stringify(score));
+
+      " class="reset-score">Reset Score</button>
+    </div>
+    <script src="rock-paper-scissors.js">
+      
+    </script>
+  </body>
+</html>
