@@ -69,3 +69,7 @@ a {
 .badge.bg-secondary {
   background-color: var(--secondary) !important;
 } 
+
+.badge.bg-purple {
+  background-color: #553C7B;
+}
