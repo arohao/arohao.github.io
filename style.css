@@ -13,4 +13,27 @@
   animation: wave 1.5s ease-in-out 1;
 }
 
+/* Intro */
+.intro {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+
+/* Card Styling */
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-footer .badge {
+  margin-right: 0.5rem;
+}
 
