@@ -13,10 +13,10 @@
   --background: #F9F9F9;
   --card-bg: #F5F5F5;
   --text-main: #333333;
-  --accent: #50E3C2;
 }
 
 body {
+  background-color: white;
   color: var(--text-main);
 }
 
@@ -40,18 +40,25 @@ a {
   padding-bottom: 2rem;
 }
 
+.lead {
+  font-size: 20pt;
+}
+
+.blockquote {
+  font-style: italic;
+}
 
 /* Card Styling */
 .card {
   background-color: var(--card-bg);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: none;
-  border-radius: 1rem;
 
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.05);
+
 }
 
 .card-footer .badge {
@@ -63,7 +70,7 @@ a {
 }
 
 .badge.bg-success {
-  background-color: var(--accent) !important;
+  background-color: #50E3C2 !important;
 }
 
 .badge.bg-secondary {
