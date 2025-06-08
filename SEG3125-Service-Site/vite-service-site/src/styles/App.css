@@ -1,0 +1,184 @@
+
+.logo {
+  height: 25px;
+}
+
+.frontpage-logo{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.frontpage-header{
+    margin-top: 30px;
+}
+
+.service-header{
+    margin-top: 30px;
+}
+
+.image-caption{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.services-group{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+
+.card{
+    width: 18rem;
+    border: 1px solid black;
+    box-shadow: 0px 1px;
+    height: 100%;
+    width: 100%;
+}
+
+.display-6{
+    font-size: 1.2rem;
+}
+
+.button_custom{
+    margin-top: 20px; 
+    margin-bottom: -5px;
+}
+
+main {
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 0 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0 30px;
+  }
+  
+  .contact-section {
+    gap: 5px !important;
+  }
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.booking-form {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.027);
+  border: solid 1px #646cff;
+  border-radius: 10px;
+
+
+  & label {
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+
+  ::placeholder {
+    color: #4A739C;
+  }
+
+  & input, textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    padding-left: 10px;
+    background-color: #e7eaef;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 11pt;
+  }
+
+  textarea {
+    height: 100px;
+    border: solid black 1px;
+    border-radius: 5px;
+  }
+
+  & select {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: #e7eaef;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 11pt;
+    margin-bottom: 25px;
+  }
+  
+  & div {
+    margin-bottom: 25px;
+  }
+
+  & .submit {
+     color: white;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #3D99F5;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+
+}
+
+.banner {
+  position: relative;
+  z-index: 4;
+  background-image: url('https://stonehavendental.com/wp-content/uploads/2019/04/Types-of-Dentists.jpg');
+  background-position-y: -35px;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 300px;
+}
+
+.banner-aboutus {
+  position: relative;
+  z-index: 4;
+  background-image: url('https://media.istockphoto.com/id/687663822/photo/dentists-office-in-barcelona-medical-workers-portrait.jpg?s=612x612&w=0&k=20&c=7TyCaVrUp_BzXEU7G3CbyMkdouqCYwikb1Saz3GTL5c=');
+  background-position-y: -35px;
+  background-size: cover;
+  width: 50%;
+  padding: 0;
+  margin: auto;
+  height: 300px;
+}
+
+super {
+  color: red;
+}
